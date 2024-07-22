@@ -387,6 +387,7 @@ def get_gaudi_sw_version():
 
 def get_vllm_version() -> str:
     version = find_version(get_path("vllm", "version.py"))
+    return version
 
     if _is_cuda():
         cuda_version = str(get_nvcc_cuda_version())
