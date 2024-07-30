@@ -76,7 +76,7 @@ environment_variables: Dict[str, Callable[[], Any]] = {
 
     # If set, vllm will install Punica kernels
     "VLLM_INSTALL_PUNICA_KERNELS":
-    lambda: bool(int(os.getenv("VLLM_INSTALL_PUNICA_KERNELS", "0"))),
+    lambda: True,
 
     # CMake build type
     # If not set, defaults to "Debug" or "RelWithDebInfo"
