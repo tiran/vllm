@@ -31,7 +31,7 @@ from vllm.logger import enable_trace_function_call, init_logger
 
 logger = init_logger(__name__)
 
-DISTRIBUTION_NAME="instructlab-vllm"
+DISTRIBUTION_NAME="vllm"
 
 STR_DTYPE_TO_TORCH_DTYPE = {
     "half": torch.half,

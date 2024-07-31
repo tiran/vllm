@@ -448,7 +448,7 @@ if envs.VLLM_USE_PRECOMPILED:
     package_data["vllm"].append("*.so")
 
 setup(
-    name="instructlab-vllm",
+    name="vllm",
     version=get_vllm_version(),
     author="The InstructLab Team",
     license="Apache 2.0",
